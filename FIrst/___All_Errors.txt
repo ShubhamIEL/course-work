@@ -1,0 +1,10 @@
+CorrelationId: 578e7204-9940-46e2-aae9-7307ad6bf332
+UTC DateTime: 07/31/2025 07:23:59
+
+The following files/folders have not been downloaded
+0. FIrst/app/build/intermediates/merged_res/debug/mergeDebugResources/values-am_values-am.arsc.flat
+1. FIrst/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ar_values-ar.arsc.flat
+2. FIrst/app/src/androidTest/java/com
+3. FIrst/app/src/main
+4. FIrst/app/src/test
+5. FIrst/gradle

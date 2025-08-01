@@ -1,0 +1,27 @@
+CorrelationId: a9696d8f-216c-4433-9d83-c3ff83783218
+UTC DateTime: 07/31/2025 07:23:46
+
+The following files/folders have not been downloaded
+0. CaptainGame/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Dav_uharp9j8rkokuXJ3LBvT9CQ=
+1. CaptainGame/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/E6SgYl_bzR3pq61bAWx2ZaXZnvc=
+2. CaptainGame/app/build/intermediates/merged_shaders/debug
+3. CaptainGame/app/build/intermediates/merged_test_only_native_libs
+4. CaptainGame/app/build/intermediates/mixed_scope_dex_archive
+5. CaptainGame/app/build/intermediates/navigation_json
+6. CaptainGame/app/build/intermediates/nested_resources_validation_report
+7. CaptainGame/app/build/intermediates/packaged_manifests
+8. CaptainGame/app/build/intermediates/packaged_res
+9. CaptainGame/app/build/intermediates/project_dex_archive
+10. CaptainGame/app/build/intermediates/runtime_symbol_list
+11. CaptainGame/app/build/intermediates/signing_config_versions
+12. CaptainGame/app/build/intermediates/source_set_path_map
+13. CaptainGame/app/build/intermediates/stable_resource_ids_file
+14. CaptainGame/app/build/intermediates/stripped_native_libs
+15. CaptainGame/app/build/intermediates/sub_project_dex_archive
+16. CaptainGame/app/build/intermediates/symbol_list_with_package_name
+17. CaptainGame/app/build/intermediates/validate_signing_config
+18. CaptainGame/app/build/kotlin
+19. CaptainGame/app/build/outputs
+20. CaptainGame/app/build/tmp
+21. CaptainGame/app/src
+22. CaptainGame/gradle

@@ -1,0 +1,27 @@
+CorrelationId: dd05aae6-80cb-4c92-abe6-9f3ebe704d7d
+UTC DateTime: 07/31/2025 07:23:37
+
+The following files/folders have not been downloaded
+0. CounterViewModel/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+UkQag4TR+Xsk8zGHTpsJVzwY0Y=
+1. CounterViewModel/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5GiuXcV1zay9MJ52yfeDN6zwlGk=
+2. CounterViewModel/app/build/intermediates/merged_shaders
+3. CounterViewModel/app/build/intermediates/merged_test_only_native_libs
+4. CounterViewModel/app/build/intermediates/mixed_scope_dex_archive
+5. CounterViewModel/app/build/intermediates/navigation_json
+6. CounterViewModel/app/build/intermediates/nested_resources_validation_report
+7. CounterViewModel/app/build/intermediates/packaged_manifests
+8. CounterViewModel/app/build/intermediates/packaged_res
+9. CounterViewModel/app/build/intermediates/project_dex_archive
+10. CounterViewModel/app/build/intermediates/runtime_symbol_list
+11. CounterViewModel/app/build/intermediates/signing_config_versions
+12. CounterViewModel/app/build/intermediates/source_set_path_map
+13. CounterViewModel/app/build/intermediates/stable_resource_ids_file
+14. CounterViewModel/app/build/intermediates/stripped_native_libs
+15. CounterViewModel/app/build/intermediates/sub_project_dex_archive
+16. CounterViewModel/app/build/intermediates/symbol_list_with_package_name
+17. CounterViewModel/app/build/intermediates/validate_signing_config
+18. CounterViewModel/app/build/kotlin
+19. CounterViewModel/app/build/outputs
+20. CounterViewModel/app/build/tmp
+21. CounterViewModel/app/src
+22. CounterViewModel/gradle
