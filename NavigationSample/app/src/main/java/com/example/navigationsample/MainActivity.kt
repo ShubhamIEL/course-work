@@ -22,6 +22,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.navigationsample.ui.theme.NavigationSampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,35 +36,25 @@ class MainActivity : ComponentActivity() {
 //                  Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
 //                  FirstScreen(modifier = Modifier.padding(padding))
 //                }
-                FirstScreen()
+               MyApp()
             }
         }
     }
 }
 
 @Composable
-fun FirstScreen(){
-    val name = remember{
-        mutableStateOf("")
-    }
-    Column (
-        modifier = Modifier.fillMaxSize().padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ){
-        Text("This is FIRST SCREEN", fontSize = 24.sp)
-        Spacer(modifier = Modifier.height(16.dp))
-        OutlinedTextField(value = name.value, onValueChange = {
-            name.value =it
-        })
-        Button(onClick = {}) {
-            Text("Go to Next Screen")
+fun MyApp() {
+    val navController =rememberNavController()
+    NavHost(navController = navController, startDestination = "firstscreen"){
+        composable("firstscreen"){
+            FirstScreen {
+                navController.navigate("secondscreen")
+            }
+        }
+        composable(route = "secondscreen") {
+            SecondScreen {
+                navController.navigate("firstscreen")
+            }
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun FirstPreview(){
-    FirstScreen()
 }
