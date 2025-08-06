@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -40,7 +41,9 @@ android {
 }
 
 dependencies {
+
     //Compose Viewmodel
+    implementation("androidx.navigation:navigation-compose:2.7.4")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2")
     implementation("com.squareup.retrofit2:retrofit:3.0.0")
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")

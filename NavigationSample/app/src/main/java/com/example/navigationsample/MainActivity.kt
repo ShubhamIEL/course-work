@@ -33,9 +33,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NavigationSampleTheme {
-//                  Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
-//                  FirstScreen(modifier = Modifier.padding(padding))
-//                }
                MyApp()
             }
         }
@@ -47,14 +44,24 @@ fun MyApp() {
     val navController =rememberNavController()
     NavHost(navController = navController, startDestination = "firstscreen"){
         composable("firstscreen"){
-            FirstScreen {
-                navController.navigate("secondscreen")
+            FirstScreen { name, age->
+                if (age.isNotEmpty()) {
+                    navController.navigate("secondscreen/$name/$age")
+                }
             }
         }
-        composable(route = "secondscreen") {
-            SecondScreen {
+        composable(route = "secondscreen/{name/{age}") {
+            val name =it.arguments?.getString("name") ?: "no name"
+            val age = it.arguments?.getInt("age") ?: 0
+            SecondScreen (name,age ){
+//                navController.navigate("thirdscreen")
                 navController.navigate("firstscreen")
             }
         }
+//        composable(route ="thirdscreen") {
+//            ThirdScreen{
+//                navController.navigate("firstscreen")
+//            }
+//        }
     }
 }
