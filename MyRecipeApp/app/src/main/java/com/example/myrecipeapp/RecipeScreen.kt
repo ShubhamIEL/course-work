@@ -24,10 +24,10 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberAsyncImagePainter
 
 @Composable
-fun RecipeScreen(modifier: Modifier= Modifier,
-                 viewState: MainViewModel.RecipeState,
+fun RecipeScreen(modifier: Modifier = Modifier,
+                 viewState: MainViewModel.RecipeState, // Correctly use the passed-in state
                  navigateToDetail:(Category)-> Unit) {
-    val recipeViewModel: MainViewModel = viewModel()
+    // val recipeViewModel: MainViewModel = viewModel() // <-- REMOVE THIS LINE
 
     Box(modifier= Modifier.fillMaxSize()){
         when{
@@ -35,7 +35,7 @@ fun RecipeScreen(modifier: Modifier= Modifier,
                 CircularProgressIndicator(modifier.align(Alignment.Center))
             }
             viewState.error !=null ->{
-                Text("Error Occured!!")
+                Text("Error Occured!! : ${viewState.error}")
             }
             else->{
                     CategoryScreen(categories = viewState.list, navigateToDetail)
@@ -58,8 +58,7 @@ fun CategoryScreen(categories: List<Category>,navigateToDetail:(Category)-> Unit
 fun CategoryItem(category: Category,
                  navigateToDetail:(Category)-> Unit ){
     Column (modifier = Modifier.padding(8.dp).fillMaxSize()
-        .clickable{
-            navigateToDetail(category)
+        .clickable{navigateToDetail(category)
         },
         horizontalAlignment = Alignment.CenterHorizontally){
         Image(
