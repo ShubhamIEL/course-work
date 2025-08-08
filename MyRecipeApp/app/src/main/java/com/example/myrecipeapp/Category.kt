@@ -9,7 +9,7 @@ data class Category(
     val strCategory: String,
     val strCategoryThumb:String,
     val strCategoryDescription:String
-) : Parcelable 
+) : Parcelable
 
 data class CategoriesResponse(
     val categories: List<Category>
